@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { gallery } from "../data/salonData";
+import { X } from "lucide-react";
 
 export function Gallery() {
   const [selected, setSelected] = useState(null);
