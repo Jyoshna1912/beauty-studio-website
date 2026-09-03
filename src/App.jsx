@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { ArrowDown, ArrowRight, Menu, X } from "lucide-react";
 import { NailBanner, salonInfo } from "./data/salonData";
-import { FairyDecor, FloatingBookButton, scrollToId, useReveal } from "./components/CommonComps";
+import {
+  FairyDecor,
+  FloatingBookButton,
+  scrollToId,
+  useReveal,
+} from "./components/CommonComps";
 import { Services } from "./pages/Services";
 import { ScrollingStory } from "./pages/Story";
 import { About } from "./pages/About";
@@ -17,14 +22,21 @@ function Logo() {
       <img
         src={salonInfo.logo}
         alt="Fairy of Nail & Lash"
-        className="h-12 w-auto max-w-[190px] object-contain sm:h-14 sm:max-w-[220px] lg:h-16 lg:max-w-[250px]"
+        className="hidden md:block h-12 w-auto max-w-[190px] object-contain sm:h-14 sm:max-w-[220px] lg:h-16 lg:max-w-[250px]"
       />
-      {/* <div>
-      <p className="font-script text-2xl leading-none text-[#8e5a43]">Fairy</p>
-      <p className="mt-1 text-[8px] font-semibold tracking-[0.25em] text-[#7b6258]">
-        OF NAIL & LASH
-      </p>
-    </div> */}
+      <img
+        src={salonInfo.mobilelogo}
+        alt="Fairy of Nail & Lash"
+        className="block md:hidden h-12 w-auto max-w-[190px] object-contain sm:h-14 sm:max-w-[220px] lg:h-16 lg:max-w-[250px]"
+      />
+      <div className="block md:hidden">
+        <p className="font-script text-2xl leading-none text-[#8e5a43]">
+          Fairy
+        </p>
+        <p className="mt-1 text-[8px] font-semibold tracking-[0.25em] text-[#7b6258]">
+          OF NAIL & LASH
+        </p>
+      </div>
     </div>
   );
 }
@@ -212,7 +224,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Services/>
+        <Services />
         <ScrollingStory />
         <About />
         <Gallery />

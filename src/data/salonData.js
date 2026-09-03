@@ -1,3 +1,4 @@
+import mobilelogo from "../assets/logo2-mobile.webp";
 import logo from "../assets/logo2.webp";
 import fairyPhoto from "../assets/fairy.webp";
 import Banner from "../assets/nail_banner.jpg";
@@ -31,6 +32,7 @@ export const salonInfo = {
   appointmentNote:
     "Special appointments can be arranged outside general hours.",
   logo,
+  mobilelogo,
   mapsQuery:
     "https://www.google.com/maps/search/?api=1&query=Fairy+of+Nail+%26+Lash%2C+19-10-19A%2C+Air+Bypass+Rd%2C+Tirupati%2C+Andhra+Pradesh+517501",
 };
