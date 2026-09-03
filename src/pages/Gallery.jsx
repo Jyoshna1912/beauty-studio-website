@@ -111,7 +111,7 @@ export function Gallery() {
                   onClick={() => setSelected(item)}
                   className="gallery-item group"
                 >
-                  <img src={item.image} alt={item.title} />
+                  <img src={item.image} alt={item.title} loading="lazy" />
 
                   <span className="gallery-overlay">
                     <span className="font-display text-3xl">{item.title}</span>
@@ -180,6 +180,7 @@ export function Gallery() {
             <img
               src={selected.image}
               alt={selected.title}
+              loading="lazy"
               className="max-h-[85vh] rounded-[1.8rem] object-contain"
             />
           </div>

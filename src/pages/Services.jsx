@@ -29,7 +29,11 @@ export function Services() {
               style={{ transitionDelay: `${index * 90}ms` }}
             >
               <div className="service-card-image">
-                <img src={service.image} alt={`${service.title} service`} />
+                <img
+                  src={service.image}
+                  alt={`${service.title} service`}
+                  loading="lazy"
+                />
                 <span className="service-number">{service.number}</span>
               </div>
               <div className="flex flex-1 flex-col p-5">

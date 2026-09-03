@@ -1,5 +1,5 @@
 import { ArrowRight, ChevronLeft, ChevronRight, Star } from "lucide-react";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { fairy, reviews } from "../data/salonData";
 
 export function Reviews() {
@@ -62,6 +62,7 @@ export function Reviews() {
                 <img
                   src={fairy}
                   alt="Fairy of Nail & Lash"
+                  loading="lazy"
                   className="h-full w-full object-contain drop-shadow-sm"
                 />
 

@@ -1,15 +1,21 @@
-import logo from "../assets/logo2.png";
+import logo from "../assets/logo2.webp";
+import fairyPhoto from "../assets/fairy.webp";
+import Banner from "../assets/nail_banner.jpg";
+//services
+import realNailPhoto from "../assets/service-nails.avif";
+import facial from "../assets/facial.webp";
 import lashPic from "../assets/eyelash-lift.jpg";
-import facial from "../assets/facial.png";
-import fairyPhoto from "../assets/fairy.png";
-export const fairy = fairyPhoto;
-export const NailBanner =
-  "https://i.pinimg.com/736x/4c/f3/91/4cf3918a94c12230cf6c2572b9cb198c.jpg";
-export const realNailPhoto =
-  "https://imgix.bustle.com/uploads/image/2024/9/11/df51f7e9/nailzkatkat_1725304813_3448429173452750126_39482263520.jpg?w=248&h=330&fit=crop&crop=focalpoint&dpr=2&fp-x=0.4924&fp-y=0.5726";
+import sareePleating from "../assets/service-pleating.jpg";
+//gallery
+import galleryNails from "../assets/gallery-nails.webp";
+import galleryPleating from "../assets/gallery-pleating.jpg";
+import galleryFacial from "../assets/gallery-facial.webp";
+import galleryHairstyle from "../assets/gallery-hairstyle.jpg";
+import galleryMakeup from "../assets/gallery-bridal-makeup.jpg";
+import galleryLashes from "../assets/gallery-lash-extension.jpg";
 
-export const sareePleating =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EWy73hIRzezN8Ad79gTBamxDvjWXvIrMyyGs8bx3xWjweOBJ6tD2AoM&s=10";
+export const fairy = fairyPhoto;
+export const NailBanner = Banner;
 
 export const salonInfo = {
   name: "Fairy of Nail & Lash",
@@ -107,38 +113,32 @@ export const gallery = [
   {
     title: "Saree Pleating",
     service: "Saree pleating for wedding",
-    image:
-      "https://i.pinimg.com/474x/6a/f6/3d/6af63d0f8dff8c521f70ee41a8d02c48.jpg",
+    image: galleryPleating,
   },
   {
     title: "Eyelash Extension",
     service: "Lashes Enlargement",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLjl5lGD-PNlF9ubyP2fo3Q4q5WAZKS1HNeoiWh9LcnE5X1_TdJj9JPX0&s=10",
+    image: galleryLashes,
   },
   {
     title: "Nail artistry",
     service: "Fancy Nails",
-    image:
-      "https://cdn.shopify.com/s/files/1/1812/2259/files/Red_nail_art_for_bride_with_leaves_and_glitter_1024x1024.jpg?v=1634442445",
+    image: galleryNails,
   },
   {
     title: "Bridal Makeup",
     service: "Makeup",
-    image:
-      "https://i.pinimg.com/736x/7d/58/76/7d5876544837759dc1a8b6dedff90f21.jpg",
+    image: galleryMakeup,
   },
   {
     title: "Bridal Hairstyles",
     service: "Hairstyling",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokD-dD6MUaibe99s3FpNlZPvjZF9Ozi9Aq4hvB5kG5cQNWATTII0bFoE&s=10",
+    image: galleryHairstyle,
   },
   {
     title: "Hydra Facials",
     service: "Facials",
-    image:
-      "https://hdmakeover.com/wp-content/uploads/2024/12/hydrafacial-price5.webp",
+    image: galleryFacial,
   },
 ];
 
